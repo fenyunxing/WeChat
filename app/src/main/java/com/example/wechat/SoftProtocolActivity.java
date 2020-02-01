@@ -26,8 +26,7 @@ public class SoftProtocolActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         //界面跳转
-        Intent intentbackregister=new Intent(SoftProtocolActivity.this,RegisterActivity.class);
-        startActivity(intentbackregister);
+        startActivity(new Intent(SoftProtocolActivity.this,RegisterActivity.class));
         //淡入
         overridePendingTransition(android.R.anim.fade_out, 0);
         finish();

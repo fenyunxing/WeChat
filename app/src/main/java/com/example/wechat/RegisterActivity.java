@@ -94,8 +94,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
             case R.id.protocol_tv:
                 //界面跳转
-                Intent intentsoftprotocl=new Intent(RegisterActivity.this,SoftProtocolActivity.class);
-                startActivity(intentsoftprotocl);
+                startActivity(new Intent(RegisterActivity.this,SoftProtocolActivity.class));
                 //淡入
                 overridePendingTransition(android.R.anim.fade_in, 0);
                 finish();

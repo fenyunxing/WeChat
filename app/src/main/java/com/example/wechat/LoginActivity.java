@@ -26,15 +26,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()){
             case R.id.login_btn:
                 //界面跳转
-                Intent intentlogin=new Intent(LoginActivity.this,SecondLoginActivity.class);
-                startActivity(intentlogin);
+                startActivity(new Intent(LoginActivity.this,SecondLoginActivity.class));
                 //左滑入
                 overridePendingTransition(android.R.anim.slide_in_left, 0);
                 break;
             case R.id.register_btn:
                 //界面跳转
-                Intent intentregister=new Intent(LoginActivity.this,RegisterActivity.class);
-                startActivity(intentregister);
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
                 //左滑入
                 overridePendingTransition(android.R.anim.slide_in_left, 0);
                 break;

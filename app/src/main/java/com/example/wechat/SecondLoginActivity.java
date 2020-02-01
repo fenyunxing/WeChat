@@ -88,8 +88,7 @@ public class SecondLoginActivity extends AppCompatActivity implements View.OnCli
 
             case R.id.message_login_tv:
                 //界面跳转
-                Intent intentmessagelogin=new Intent(SecondLoginActivity.this,MessageLoginActivity.class);
-                startActivity(intentmessagelogin);
+                startActivity(new Intent(SecondLoginActivity.this,MessageLoginActivity.class));
                 //左滑入
                 overridePendingTransition(android.R.anim.slide_in_left, 0);
                 break;
