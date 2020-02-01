@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/find_back_password" android:title="找回密码" />
+    <item android:id="@+id/apply_thaw" android:title="申请解冻" />
+    <item android:id="@+id/safety_center" android:title="安全中心" />
+</menu>

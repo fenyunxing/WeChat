@@ -1,0 +1,26 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<litepal>
+    <!--
+    定义数据库名
+    -->
+    <dbname value="user_information" />
+
+    <!--
+    定义版本号
+    -->
+    <version value="3" />
+
+    <!--
+    	将数据表类添加进来，一条list代表一张表
+    	For example:
+    	<list>
+    		<mapping class="com.test.model.Reader" />
+    		<mapping class="com.test.model.Magazine" />
+    	</list>
+    -->
+    <list>
+        <mapping class="com.example.litepal.usertable.UserOne"></mapping>
+    </list>
+
+
+</litepal>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题栏-->
+<include layout="@layout/title"/>
+
+    <!--第一行字-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:text="国家/地区"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="30dp"
+            android:gravity="right"
+            android:text="中国"
+            android:textSize="22sp"
+            android:textColor="@color/color2"/>
+
+    </LinearLayout>
+
+    <!--输入电话行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86"
+            android:textSize="22sp"
+            android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/inputnumber_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:hint="请输入电话号码"/>
+    </LinearLayout>
+
+    <!--分割线-->
+    <TextView
+        android:background="@color/color3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"/>
+
+
+    <!--输入密码行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textSize="22sp"
+            android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/inputpassword_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:inputType="textPassword"
+            android:hint="请输入密码"/>
+    </LinearLayout>
+
+    <!--登录按钮-->
+<Button
+    android:id="@+id/login_btn2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/loginbtnclick"
+    android:text="登录"
+    android:textSize="22sp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="10dp">
+    <!--提示文本用——短信验证码登录-->
+    <TextView
+        android:id="@+id/message_login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:text="用短信验证码登录"
+        android:textColor="@color/color4"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:gravity="bottom"
+        android:layout_marginBottom="15dp"
+        >
+
+        <com.example.title.BottomTextLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

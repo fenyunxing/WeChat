@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--最后两行字-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:id="@+id/login_problem_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="遇到登录问题?"
+            android:textColor="@color/color4"
+            android:paddingEnd="15dp"
+            android:gravity="end"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:id="@+id/other_loginways_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="使用其他方式登录"
+            android:textColor="@color/color4"
+            android:paddingStart="15dp"
+            android:clickable="true"
+            android:gravity="start"
+            />
+    </LinearLayout>
+
+
+

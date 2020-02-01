@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeChat</string>
+    <drawable name="color2">#22DD22</drawable>
+
+    <drawable name="color1">#fff</drawable>
+
+</resources>
