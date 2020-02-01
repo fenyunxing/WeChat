@@ -9,6 +9,11 @@
     <color name="color3">#CFFF88</color>
     <color name="color4">#5577FF</color>
     <color name="color5">#888888</color>
+    <color name="top_title_background">#F7F7F7</color>
+    <color name="bottom_btn_background">#F7F7F7</color>
+    <color name="top_title_text_color">#222222</color>
+    <color name="bottom_title_text_color">#222222</color>
+    <color name="bottom_title_text_press">#1B940A</color>
 
 
 </resources>

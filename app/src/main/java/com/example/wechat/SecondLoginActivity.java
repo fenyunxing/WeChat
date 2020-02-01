@@ -74,6 +74,11 @@ public class SecondLoginActivity extends AppCompatActivity implements View.OnCli
                          //在集合中取出该条信息的密码与输入密码配对校验
                         if(userOneList.get(0).getPassword().equals(userpassword)){
                             Toast.makeText(SecondLoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
+                            //界面跳转到主界面
+                            startActivity(new Intent(SecondLoginActivity.this,MainActivity.class));
+                            //左滑入
+                            overridePendingTransition(android.R.anim.slide_in_left, 0);
+                            finish();
                         } else {
                             Toast.makeText(SecondLoginActivity.this, "密码与用户不匹配", Toast.LENGTH_SHORT).show();
                         }

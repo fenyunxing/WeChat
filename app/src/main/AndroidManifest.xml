@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".MessageLoginActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MessageLoginActivity" />
         <activity android:name=".SoftProtocolActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SecondLoginActivity" />
