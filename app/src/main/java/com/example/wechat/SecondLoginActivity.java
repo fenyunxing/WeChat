@@ -78,7 +78,7 @@ public class SecondLoginActivity extends AppCompatActivity implements View.OnCli
                             startActivity(new Intent(SecondLoginActivity.this,MainActivity.class));
                             //左滑入
                             overridePendingTransition(android.R.anim.slide_in_left, 0);
-                            finish();
+                           // finish();
                         } else {
                             Toast.makeText(SecondLoginActivity.this, "密码与用户不匹配", Toast.LENGTH_SHORT).show();
                         }
