@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -18,6 +19,8 @@ import com.example.fragment.WeChat_Fragment;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 ImageView  mWeiXinImg, mAddressImg,mFrdImg, mMyImg;
 LinearLayout mWechat_Mian,mWechat_Contact,mWechat_Discover,mWechat_My;
+TextView mtop_title_text,mbottom_wechat_text,mbottom_contact_text,mbottom_discover_text,mbottom_my_text;
+ImageView mtop_search_btn,mtop_plus_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +35,7 @@ LinearLayout mWechat_Mian,mWechat_Contact,mWechat_Discover,mWechat_My;
      * 初始化设置
      */
     private void initView() {
-        //获取四个线性布局
+        //获取线性布局
         mWechat_Mian=(LinearLayout)findViewById(R.id.wechat_main);
         mWechat_Contact=(LinearLayout)findViewById(R.id.wechat_contact);
         mWechat_Discover=(LinearLayout)findViewById(R.id.wechat_discover);
@@ -47,6 +50,23 @@ LinearLayout mWechat_Mian,mWechat_Contact,mWechat_Discover,mWechat_My;
         mAddressImg=(ImageView)findViewById(R.id.contact_icon);
         mFrdImg=(ImageView)findViewById(R.id.discover_icon);
         mMyImg=(ImageView)findViewById(R.id.mine_icon);
+
+        //获取顶部标题文字控件
+        mtop_title_text=(TextView)findViewById(R.id.top_title_text);
+
+        //获取底部文字控件
+        mbottom_wechat_text=(TextView)findViewById(R.id.wechat_text);
+        mbottom_contact_text=(TextView)findViewById(R.id.contact_text);
+        mbottom_discover_text=(TextView)findViewById(R.id.discover_text);
+        mbottom_my_text=(TextView)findViewById(R.id.mine_text);
+        //获取顶部图片按钮
+        mtop_search_btn=(ImageView) findViewById(R.id.top_search_btn);
+        mtop_plus_btn=(ImageView) findViewById(R.id.top_plus_btn);
+        mtop_search_btn.setOnClickListener(this);
+        mtop_plus_btn.setOnClickListener(this);
+
+
+
 
     }
 
@@ -68,24 +88,32 @@ LinearLayout mWechat_Mian,mWechat_Contact,mWechat_Discover,mWechat_My;
 
         switch (arg0.getId()) {
             case R.id.wechat_main:
+                mtop_title_text.setText("微信(num)");
                 replaceFragment(new WeChat_Fragment());
                 resetImg();
                 mWeiXinImg.setImageResource(R.drawable.wechat_press);
+                mbottom_wechat_text.setTextColor(getResources().getColor(R.color.bottom_title_text_press));
                 break;
             case R.id.wechat_contact:
+                mtop_title_text.setText("联系人");
                 replaceFragment(new Contact_Fragment());
                 resetImg();
                 mAddressImg.setImageResource(R.drawable.contact_press);
+                mbottom_contact_text.setTextColor(getResources().getColor(R.color.bottom_title_text_press));
                 break;
             case R.id.wechat_discover:
+                mtop_title_text.setText("发现");
                 replaceFragment(new Discover_Fragment());
                 resetImg();
                 mFrdImg.setImageResource(R.drawable.discover_press);
+                mbottom_discover_text.setTextColor(getResources().getColor(R.color.bottom_title_text_press));
                 break;
             case R.id.wechat_mine:
+                mtop_title_text.setText("我");
                 replaceFragment(new My_Fragment());
                 resetImg();
                 mMyImg.setImageResource(R.drawable.my_press);
+                mbottom_my_text.setTextColor(getResources().getColor(R.color.bottom_title_text_press));
                 break;
             default:
                 break;
@@ -100,6 +128,10 @@ LinearLayout mWechat_Mian,mWechat_Contact,mWechat_Discover,mWechat_My;
         mAddressImg.setImageResource(R.drawable.contact_normal);
         mFrdImg.setImageResource(R.drawable.discover_normal);
         mMyImg.setImageResource(R.drawable.my_normal);
+        mbottom_wechat_text.setTextColor(getResources().getColor(R.color.bottom_title_text_color));
+        mbottom_contact_text.setTextColor(getResources().getColor(R.color.bottom_title_text_color));
+        mbottom_discover_text.setTextColor(getResources().getColor(R.color.bottom_title_text_color));
+        mbottom_my_text.setTextColor(getResources().getColor(R.color.bottom_title_text_color));
     }
 
 

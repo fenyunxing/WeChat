@@ -4,6 +4,7 @@
     android:layout_height="65dp"
     android:background="@color/top_title_background" >
     <TextView
+        android:id="@+id/top_title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -14,11 +15,12 @@
         android:textStyle="bold"
         />
     <LinearLayout
+        android:id="@+id/top_title_img"
         android:gravity="right|bottom"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <ImageButton
+        <ImageView
             android:layout_marginBottom="16dp"
             android:layout_marginRight="40dp"
             android:id="@+id/top_search_btn"
@@ -26,7 +28,7 @@
             android:background="@drawable/search3"
             android:layout_width="25dp"
             android:layout_height="25dp" />
-        <ImageButton
+        <ImageView
             android:layout_marginBottom="16dp"
             android:layout_marginRight="20dp"
             android:id="@+id/top_plus_btn"
