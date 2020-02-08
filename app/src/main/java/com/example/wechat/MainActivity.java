@@ -88,9 +88,10 @@ ImageView mtop_search_btn,mtop_plus_btn;
 
         switch (arg0.getId()) {
             case R.id.wechat_main:
-                mtop_title_text.setText("微信(num)");
-                replaceFragment(new WeChat_Fragment());
-                resetImg();
+                mtop_title_text.setText("微信(num)");//更改顶部标题
+                replaceFragment(new WeChat_Fragment());//更改内容
+                resetImg();//重置底部导航栏显示
+                //设置选中颜色效果
                 mWeiXinImg.setImageResource(R.drawable.wechat_press);
                 mbottom_wechat_text.setTextColor(getResources().getColor(R.color.bottom_title_text_press));
                 break;
