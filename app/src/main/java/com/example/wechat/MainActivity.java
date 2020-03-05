@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +22,7 @@ ImageView  mWeiXinImg, mAddressImg,mFrdImg, mMyImg;
 LinearLayout mWechat_Mian,mWechat_Contact,mWechat_Discover,mWechat_My;
 TextView mtop_title_text,mbottom_wechat_text,mbottom_contact_text,mbottom_discover_text,mbottom_my_text;
 ImageView mtop_search_btn,mtop_plus_btn;
-
+RelativeLayout mtop_title_layout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +54,7 @@ ImageView mtop_search_btn,mtop_plus_btn;
 
         //获取顶部标题文字控件
         mtop_title_text=(TextView)findViewById(R.id.top_title_text);
+        mtop_title_layout =(RelativeLayout) findViewById(R.id.toptitle_layout);
 
         //获取底部文字控件
         mbottom_wechat_text=(TextView)findViewById(R.id.wechat_text);
@@ -110,9 +112,10 @@ ImageView mtop_search_btn,mtop_plus_btn;
                 mbottom_discover_text.setTextColor(getResources().getColor(R.color.bottom_title_text_press));
                 break;
             case R.id.wechat_mine:
-                mtop_title_text.setText("我");
+               // mtop_title_text.setText("我");
                 replaceFragment(new My_Fragment());
                 resetImg();
+                mtop_title_layout.setVisibility(View.GONE);
                 mMyImg.setImageResource(R.drawable.my_press);
                 mbottom_my_text.setTextColor(getResources().getColor(R.color.bottom_title_text_press));
                 break;
@@ -125,6 +128,7 @@ ImageView mtop_search_btn,mtop_plus_btn;
      * 把所有图片变暗
      */
     private void resetImg() {
+        mtop_title_layout.setVisibility(View.VISIBLE);
         mWeiXinImg.setImageResource(R.drawable.wechat_normal);
         mAddressImg.setImageResource(R.drawable.contact_normal);
         mFrdImg.setImageResource(R.drawable.discover_normal);

@@ -1,6 +1,7 @@
 package com.example.wechat;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +16,6 @@ import com.example.litepal.usertable.UserOne;
 
 import org.litepal.LitePal;
 
-import java.util.List;
 import java.util.Random;
 
 public class MessageLoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -54,8 +54,8 @@ public class MessageLoginActivity extends AppCompatActivity implements View.OnCl
 
     //获取用户登陆信息函数
     void get_login_infor() {
-        message_login_inputnumber  =  message_login_inputnumber_et.getText().toString();
-        message_login_inputchecknumber =  message_login_inputchecknumber_et.getText().toString();
+        message_login_inputnumber = message_login_inputnumber_et.getText().toString();
+        message_login_inputchecknumber = message_login_inputchecknumber_et.getText().toString();
     }
 
     @Override
@@ -81,10 +81,15 @@ public class MessageLoginActivity extends AppCompatActivity implements View.OnCl
                 } else if (LitePal.isExist(UserOne.class, "number=?", message_login_inputnumber)) {
                     //获取输入的验证码
                     inputchecknum = Integer.valueOf(message_login_inputchecknumber);
-                    if (inputchecknum == checknum)
+                    if (inputchecknum == checknum) {
                         Toast.makeText(MessageLoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
-                    else
+                        //界面跳转到主界面
+                        startActivity(new Intent(MessageLoginActivity.this,MainActivity.class));
+                        //左滑入
+                        overridePendingTransition(android.R.anim.slide_in_left, 0);
+                    } else {
                         Toast.makeText(MessageLoginActivity.this, "验证码错误", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
                 break;
@@ -92,7 +97,7 @@ public class MessageLoginActivity extends AppCompatActivity implements View.OnCl
             case R.id.sendmessage_btn:
                 get_login_infor();
                 //判断手机号是否输入完整
-                if(message_login_inputnumber.equals("")){
+                if (message_login_inputnumber.equals("")) {
                     Toast.makeText(MessageLoginActivity.this, "请填写完整手机号", Toast.LENGTH_SHORT).show();
                 } else if (LitePal.isExist(UserOne.class, "number=?", message_login_inputnumber)) {
                     //给手机发验证码
