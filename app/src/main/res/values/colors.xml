@@ -14,6 +14,8 @@
     <color name="top_title_text_color">#222222</color>
     <color name="bottom_title_text_color">#222222</color>
     <color name="bottom_title_text_press">#1B940A</color>
+    <color name="discover_fragment_background">#DDDDDD</color>
+    <color name="discover_fragment_item_background">#FFFFFF</color>
 
 
 </resources>

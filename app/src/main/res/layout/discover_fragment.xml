@@ -2,11 +2,276 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
-    <TextView
-        android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/discover_fragment_background"
+   >
+    <!--朋友圈item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="wrap_content"
-        android:text="这是发现"
-        />
+        android:layout_width="match_parent"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/circle_of_friends"
+            android:id="@+id/Circle_of_friends_Image"
+            />
+
+        <TextView
+            android:id="@+id/Circle_of_friends_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="朋友圈"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            />
+    </LinearLayout>
+
+    <!--扫一扫item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/scan_one_scan"
+            android:id="@+id/scan_one_scan_Image"
+            />
+
+        <TextView
+            android:id="@+id/scan_one_scan_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="扫一扫"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            />
+    </LinearLayout>
+
+    <!--摇一摇item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/shake_a_shake"
+            android:id="@+id/shake_a_shake_Image"
+            />
+
+        <TextView
+            android:id="@+id/shake_a_shake_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="摇一摇"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--看一看item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/look_a_look"
+            android:id="@+id/look_a_look_Image"
+            />
+
+        <TextView
+            android:id="@+id/look_a_look_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="看一看"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--搜一搜item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/find_a_find"
+            android:id="@+id/find_a_find_Imag"
+            />
+
+        <TextView
+            android:id="@+id/find_a_find_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="搜一搜"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--附近的人item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/near_people"
+            android:id="@+id/near_people_Imag"
+            />
+
+        <TextView
+            android:id="@+id/near_people_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="附近的人"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--购物item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/shopping"
+            android:id="@+id/shopping_Imag"
+            />
+
+        <TextView
+            android:id="@+id/shopping_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="购物"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--游戏item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/game"
+            android:id="@+id/game_Imag"
+            />
+
+        <TextView
+            android:id="@+id/game_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="游戏"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--小程序item-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/discover_fragment_item_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/small_app"
+            android:id="@+id/small_app_Imag"
+            />
+
+        <TextView
+            android:id="@+id/small_app_Text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="小程序"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
 
 </LinearLayout>

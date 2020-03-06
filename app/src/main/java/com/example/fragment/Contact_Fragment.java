@@ -27,17 +27,18 @@ public class Contact_Fragment extends Fragment {
     View contentView;
     SimpleAdapter mSimpleAdapter;
     ArrayList<HashMap<String, Object>> listItem = new ArrayList<HashMap<String, Object>>();
+
     @Override
     public void onStart() {
         super.onStart();
         /*在数组中存放数据*/
-        for (int i = 0; i < 9; i++) {
-            HashMap<String, Object> map = new HashMap<String, Object>();
-            map.put("ItemImage", image[i]);//加入图片
-            map.put("ItemTitle", "第" + (i + 1) + "行");
-            map.put("ItemText", fruitname[i]);
-            listItem.add(map);
-        }
+        for (int j = 0; j < 2; j++)
+            for (int i = 0; i < 9; i++) {
+                HashMap<String, Object> map = new HashMap<String, Object>();
+                map.put("ItemImage", image[i]);//加入图片
+                map.put("ItemText", fruitname[i]);
+                listItem.add(map);
+            }
     }
 
     @Override
@@ -49,13 +50,13 @@ public class Contact_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         //创建页面frament
-        contentView=inflater.inflate(R.layout.contact_fragment, container, false);
+        contentView = inflater.inflate(R.layout.contact_fragment, container, false);
         lv = (ListView) (contentView).findViewById(R.id.listview);
         mSimpleAdapter = new SimpleAdapter(getContext(), listItem,//需要绑定的数据
                 R.layout.list_item_layout,//每一行的布局
                 //动态数组中的数据源的键对应到定义布局的View中
-                new String[]{"ItemTitle", "ItemImage", "ItemText"},
-                new int[]{R.id.ItemTitle, R.id.ItemImage, R.id.ItemText}
+                new String[]{"ItemImage", "ItemText"},
+                new int[]{R.id.ItemImage, R.id.ItemText}
         );
         lv.setAdapter(mSimpleAdapter);//为ListView绑定适配器
         // Inflate the layout for this fragment
