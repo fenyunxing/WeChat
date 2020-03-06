@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,12 +19,16 @@ import com.example.fragment.Discover_Fragment;
 import com.example.fragment.My_Fragment;
 import com.example.fragment.WeChat_Fragment;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 ImageView  mWeiXinImg, mAddressImg,mFrdImg, mMyImg;
 LinearLayout mWechat_Mian,mWechat_Contact,mWechat_Discover,mWechat_My;
 TextView mtop_title_text,mbottom_wechat_text,mbottom_contact_text,mbottom_discover_text,mbottom_my_text;
 ImageView mtop_search_btn,mtop_plus_btn;
 RelativeLayout mtop_title_layout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,9 @@ RelativeLayout mtop_title_layout;
         setContentView(R.layout.activity_main);
         initView();
         initEvent();
+
+
+
     }
 
     /**
@@ -77,8 +86,6 @@ RelativeLayout mtop_title_layout;
         replaceFragment(new WeChat_Fragment());
 
     }
-
-
 
 
 
