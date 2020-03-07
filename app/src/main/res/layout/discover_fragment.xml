@@ -8,7 +8,7 @@
     <!--朋友圈item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
         android:background="@color/discover_fragment_item_background"
         android:orientation="horizontal">
@@ -17,13 +17,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="9dp"
             android:src="@drawable/circle_of_friends"
-            android:id="@+id/Circle_of_friends_Image"
+            android:id="@+id/iv_circle_of_friends_Image"
             />
 
         <TextView
-            android:id="@+id/Circle_of_friends_Text"
+            android:id="@+id/tv_circle_of_friends_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="朋友圈"
@@ -37,9 +37,9 @@
     <!--扫一扫item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:background="@color/discover_fragment_item_background"
         android:orientation="horizontal">
 
@@ -47,13 +47,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="9dp"
             android:src="@drawable/scan_one_scan"
-            android:id="@+id/scan_one_scan_Image"
+            android:id="@+id/iv_scan_one_scan_Image"
             />
 
         <TextView
-            android:id="@+id/scan_one_scan_Text"
+            android:id="@+id/tv_scan_one_scan_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="扫一扫"
@@ -67,7 +67,7 @@
     <!--摇一摇item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
         android:layout_marginTop="1dp"
         android:background="@color/discover_fragment_item_background"
@@ -77,13 +77,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="9dp"
             android:src="@drawable/shake_a_shake"
-            android:id="@+id/shake_a_shake_Image"
+            android:id="@+id/iv_shake_a_shake_Image"
             />
 
         <TextView
-            android:id="@+id/shake_a_shake_Text"
+            android:id="@+id/tv_shake_a_shake_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="摇一摇"
@@ -96,9 +96,9 @@
     <!--看一看item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:background="@color/discover_fragment_item_background"
         android:orientation="horizontal">
 
@@ -106,13 +106,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="9dp"
             android:src="@drawable/look_a_look"
-            android:id="@+id/look_a_look_Image"
+            android:id="@+id/iv_look_a_look_Image"
             />
 
         <TextView
-            android:id="@+id/look_a_look_Text"
+            android:id="@+id/tv_look_a_look_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="看一看"
@@ -125,7 +125,7 @@
     <!--搜一搜item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
         android:layout_marginTop="1dp"
         android:background="@color/discover_fragment_item_background"
@@ -135,13 +135,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="9dp"
             android:src="@drawable/find_a_find"
-            android:id="@+id/find_a_find_Imag"
+            android:id="@+id/iv_find_a_find_Imag"
             />
 
         <TextView
-            android:id="@+id/find_a_find_Text"
+            android:id="@+id/tv_find_a_find_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="搜一搜"
@@ -154,9 +154,9 @@
     <!--附近的人item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:background="@color/discover_fragment_item_background"
         android:orientation="horizontal">
 
@@ -164,13 +164,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="9dp"
             android:src="@drawable/near_people"
-            android:id="@+id/near_people_Imag"
+            android:id="@+id/iv_near_people_Imag"
             />
 
         <TextView
-            android:id="@+id/near_people_Text"
+            android:id="@+id/tv_near_people_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="附近的人"
@@ -183,9 +183,9 @@
     <!--购物item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:background="@color/discover_fragment_item_background"
         android:orientation="horizontal">
 
@@ -193,13 +193,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="12dp"
             android:src="@drawable/shopping"
-            android:id="@+id/shopping_Imag"
+            android:id="@+id/iv_shopping_Imag"
             />
 
         <TextView
-            android:id="@+id/shopping_Text"
+            android:id="@+id/tv_shopping_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="购物"
@@ -212,7 +212,7 @@
     <!--游戏item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
         android:layout_marginTop="1dp"
         android:background="@color/discover_fragment_item_background"
@@ -222,13 +222,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="9dp"
             android:src="@drawable/game"
-            android:id="@+id/game_Imag"
+            android:id="@+id/iv_game_Imag"
             />
 
         <TextView
-            android:id="@+id/game_Text"
+            android:id="@+id/tv_game_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="游戏"
@@ -241,9 +241,9 @@
     <!--小程序item-->
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="wrap_content"
+        android:layout_height="51dp"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:background="@color/discover_fragment_item_background"
         android:orientation="horizontal">
 
@@ -251,13 +251,13 @@
             android:layout_alignParentLeft="true"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_margin="9dp"
             android:src="@drawable/small_app"
-            android:id="@+id/small_app_Imag"
+            android:id="@+id/iv_small_app_Imag"
             />
 
         <TextView
-            android:id="@+id/small_app_Text"
+            android:id="@+id/tv_small_app_Text"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:text="小程序"
@@ -266,11 +266,6 @@
             android:layout_width="wrap_content"
             />
     </LinearLayout>
-
-
-
-
-
 
 
 

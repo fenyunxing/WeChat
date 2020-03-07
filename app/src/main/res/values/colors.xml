@@ -16,6 +16,8 @@
     <color name="bottom_title_text_press">#1B940A</color>
     <color name="discover_fragment_background">#DDDDDD</color>
     <color name="discover_fragment_item_background">#FFFFFF</color>
+    <color name="my_fragment_item_background">#FFFFFF</color>
+    <color name="my_fragment_background">#DDDDDD</color>
 
 
 </resources>
